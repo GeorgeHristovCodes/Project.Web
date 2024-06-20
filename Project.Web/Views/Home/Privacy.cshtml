@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Room Types";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title of the document</title>
+    <style>
+
+        body {
+            background-image: url("/images/image.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+       
+        h1{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Room Types</h1>
+
+
+</body>
+
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="/images/bedroom-wooden-headboard-white-hanging-260nw-2277238693.webp" alt="One Bed">
+  <div class="card-body">
+    <h5 class="card-title">One Bed</h5>
+    <p class="card-text">Единична стая, с изглед към Родопите, прекрасно място за почивка</p>
+    <a asp-controller="Persons" asp-action="Add" class="btn btn-primary">Make reservation</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="/images/download.jpg" alt="Two Bed's">
+    <div class="card-body">
+        <h5 class="card-title">Two Bed's</h5>
+        <p class="card-text">Двойната ни стая е с изглед към Родопите, прекрасно място за почивка</p>
+        <a asp-controller="Persons" asp-action="Add" class="btn btn-primary">Make reservation</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="/images/download (1).jpg" alt="Three Bed's">
+    <div class="card-body">
+        <h5 class="card-title">Three Bed's</h5>
+        <p class="card-text">Тройната ни стая е с изглед към Родопите, прекрасно място за почивка</p>
+        <a asp-controller="Persons" asp-action="Add" class="btn btn-primary">Make reservation</a>
+    </div>
+</div>
+
+</html>

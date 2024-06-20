@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title of the document</title>
+    <style>
+
+        body{
+            background-image: url("/images/image.jpeg");
+            background-size: cover; 
+            background-position: center;
+        }
+        h1{
+            color: white;
+            position: center; 
+        }
+        h2{
+            color: white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Добре дошли в Park-Hotel Rodopi</h1>
+    <h2>Тук може да намерите красотата на природата.</h2>
+    
+    <div class="card w-75">
+        <div class="card-body">
+            <h5 class="card-title">See our room's</h5>
+            <p class="card-text">Предлагаме удобство в планината.</p>
+            <a asp-controller="Home" asp-action="Privacy" class="btn btn-primary">Кликни тук!</a>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">
+            Reservation 
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Лесно, удобно, практично</h5>
+            <p class="card-text">Направи резервация  само с един клик.</p>
+            <a asp-controller="Persons" asp-action="Add" class="btn btn-primary">Make reservation</a>
+        </div>
+    </div>
+
+</body>
+</html>

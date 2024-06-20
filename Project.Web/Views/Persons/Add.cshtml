@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@model Project.Web.Models.AddPersonViewModel
+
+<h1>Add Reservation</h1>
+
+<form method="post">
+
+
+<div class="mt-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" asp-for="Name"/>
+</div>
+
+<div class="mt-3">
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control" asp-for="Email" />
+</div>
+
+<div class="mt-3">
+    <label class="form-label">Phone</label>
+    <input type="text" class="form-control" asp-for="Phone" />
+</div>
+    <label for="room-types">Choose a room type:</label>
+    <select name="room-types" id="room-types">
+        <option value="One bed">One bed</option>
+        <option value="Two bed's'">Two bed's</option>
+        <option value="Three bed's">Three bed's</option>
+    </select>
+
+<div class="mt-3">
+    <input type="checkbox" class="form-check-input" id="Subscribed" asp-for="Subscribed" />
+    <label class="form-check-label" for="Subscribed">Subscribed</label>
+</div>
+
+<div class="mt-3"> 
+    <button type="submit" class="btn btn-primary">Save</button>
+</div>
+
+   
+</form>
